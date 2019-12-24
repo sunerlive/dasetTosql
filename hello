@@ -1,0 +1,4 @@
+WorkBook workbook = WorkBook.Load(excelFile);
+
+WorkSheet sheet = workbook.GetWorkSheet(sheetName.ToString());
+System.Data.DataTable dataTable = sheet.ToDataTable(true);
